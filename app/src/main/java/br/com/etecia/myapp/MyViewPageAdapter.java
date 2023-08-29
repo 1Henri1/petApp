@@ -17,17 +17,17 @@ public class MyViewPageAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
 
-        switch (position){
+        switch (position) {
             case 0:
-                return  new dogFragment();
+                return new dogFragment();
             case 1:
-                return  new catsFragment();
+                return new catsFragment();
             default:
                 return new snakeFragment();
         }
-
-    @Override
-    public int getItemCount() {
-        return 3;
     }
-}
+        @Override
+        public int getItemCount () {
+            return 2;
+        }
+    }
